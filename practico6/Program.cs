@@ -76,6 +76,39 @@
         //     Console.WriteLine("Minimo: " + minNumero(num2, num3));
         // }
 
+        //------ Ejercicio 4 ------
+        //Siguiendo con el ejemplo de la calculadora (ejercicio 2) ingrese una ecuación simple 
+        //como cadena de caracteres y que el sistema lo resuelva. Por ej. ingrese
+        //por pantalla “582+2” y que le devuelva la suma de 582 con 2
+        // string? ecuacion;
+        // do
+        // {
+        //     Console.Write("Ingrese una ecuacion: ");
+        //     ecuacion = Console.ReadLine();
+        // } while (ecuacion == null);
+
+        // string[] partes = ecuacion.Split('+', '-', '*', '/');
+        // char operador;
+        // string operando1;
+        // string operando2;
+
+        // if (partes.Length == 2)
+        // {
+        //     operando1 = partes[0];
+        //     operando2 = partes[1];
+        //     operador = ecuacion[(operando1.Length)];
+
+        //     Console.WriteLine("Operando 1: " + operando1);
+        //     Console.WriteLine("Operador: " + operador);
+        //     Console.WriteLine("Operando 2: " + operando2);
+        //     string resultado = calculadora(operando1, operando2, operador);
+        //     Console.WriteLine($"Resultado: {resultado}");
+        // }
+        // else
+        // {
+        //     Console.WriteLine("Ecuación inválida");
+        // }
+
     }
     public static string invertirNumero(int num)
     {
@@ -116,17 +149,21 @@
         return resultado.ToString();
     }
 
-    public static string calculadora(string num1, string num2, string operador)
+    public static string calculadora(string num1, string num2, char operador)
     {
         switch (operador)
         {
-            case "1":
+            case '1':
+            case '+':
                 return sumar(num1, num2);
-            case "2":
+            case '2':
+            case '-':
                 return restar(num1, num2);
-            case "3":
+            case '3':
+            case '*':
                 return multiplicar(num1, num2);
-            case "4":
+            case '4':
+            case '/':
                 return dividir(num1, num2);
             default:
                 return "ERROR: opcion ingresada incorrecta";
