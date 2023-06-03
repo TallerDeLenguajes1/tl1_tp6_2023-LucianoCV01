@@ -88,7 +88,3 @@
         }
     }
 }
-/*
-Dada una cadena (un string) de texto ingresada por el usuario, realice las siguientes tarea:
-
-*/
