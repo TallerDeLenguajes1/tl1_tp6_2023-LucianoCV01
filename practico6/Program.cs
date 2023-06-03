@@ -37,11 +37,11 @@
             Console.Write("Ingrese un texto: ");
             cadena1 = Console.ReadLine();
         } while (cadena1 == null);
-        // Obtener la longitud de la cadena y muestre por pantalla.
-        int longitud;
-        longitud = cadena1.Length;
-        Console.WriteLine(cadena1);
-        Console.WriteLine($"Longitud: {longitud}");
+        // // Obtener la longitud de la cadena y muestre por pantalla.
+        // int longitud;
+        // longitud = cadena1.Length;
+        // Console.WriteLine(cadena1);
+        // Console.WriteLine($"Longitud: {longitud}");
         // A partir de una segunda cadena ingresada por el usuario, concatene ambas cadenas distintas.
         string? cadena2;
         do
@@ -52,10 +52,29 @@
         Console.WriteLine(cadena2);
         string cadenasConca = string.Concat(cadena1, " ", cadena2);
         Console.WriteLine(cadenasConca);
-        // Extraer una subcadena de la cadena ingresada.
-        string subcadena = cadena1.Substring(0, 4);
-        Console.WriteLine(subcadena);
-
+        // // Extraer una subcadena de la cadena ingresada.
+        // string subcadena = cadena1.Substring(0, 4);
+        // Console.WriteLine(subcadena);
+        // // Recorrer la cadena de texto con un ciclo Foreach e ir mostrando elemento por elemento en pantalla
+        // foreach (var item in subcadena)
+        // {
+        //     Console.WriteLine(item);
+        // }
+        // // Buscar la ocurrencia de una palabra determinada en la cadena ingresada
+        // int ocurrencia = cadena1.IndexOf(cadena2);
+        // Console.WriteLine(cadena1[ocurrencia]);
+        // // Convierta la cadena a mayúsculas y luego a minúsculas.
+        // cadena1 = cadena1.ToUpper();
+        // cadena2 = cadena1.ToLower();
+        // Console.WriteLine(cadena1);
+        // Console.WriteLine(cadena2);
+        // // Ingrese una cadena separada por caracteres que usted determine y muestre por pantalla los resultados (Revisar el comportamiento de split())
+        // string[] cadenas = cadena1.Split(" ");
+        // foreach (var subcadena in cadenas)
+        // {
+        //     Console.WriteLine(subcadena);
+        // }
+        
 
     }
     public static string invertirNumero(int num)
@@ -71,11 +90,5 @@
 }
 /*
 Dada una cadena (un string) de texto ingresada por el usuario, realice las siguientes tarea:
-● Recorrer la cadena de texto con un ciclo Foreach e ir mostrando elemento por elemento en pantalla
-● Buscar la ocurrencia de una palabra determinada en la cadena ingresada
-● Convierta la cadena a mayúsculas y luego a minúsculas.
-● Ingrese una cadena separada por caracteres que usted determine y muestre por
-pantalla los resultados (Revisar el comportamiento de split())
-● Siguiendo con el ejemplo de la calculadora (ejercicio 2) ingrese una ecuación simple como cadena de caracteres y que el sistema lo resuelva. Por ej. ingrese
-por pantalla “582+2” y que le devuelva la suma de 582 con 2
+
 */
